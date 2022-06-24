@@ -63,9 +63,8 @@
         "local": {
             "label": "Local Tezos Sandbox",
             "rpcUrl": "http://localhost:20000",
-            "protocol": "Psithaca2MLRFYargivpo7YvUr7wUDqyxrdhC5CQq78mRvimz6A",
+            "protocol": "Psithaca2MLRFYargivpo7YvUr7wUDqyxrdhC5CQq78mRvimz6A"
             }
-        }
     },
     "network": {
         "ithaca_network": {
