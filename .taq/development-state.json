@@ -1,0 +1,26 @@
+{
+    "operations": {},
+    "tasks": {
+        "@taqueria/plugin-ligo.compile.1656050414206": {
+            "time": 1656050414206,
+            "output": [
+                {
+                    "contract": "nft-contract.mligo",
+                    "artifact": "artifacts/nft-contract.tz"
+                }
+            ]
+        },
+        "@taqueria/plugin-contract-types.generate types.1656050437434": {
+            "time": 1656050437434,
+            "output": null
+        },
+        "@taqueria/plugin-flextesa.start sandbox.1656050695565": {
+            "time": 1656050695565,
+            "output": null
+        },
+        "@taqueria/plugin-taquito.deploy.1656050700823": {
+            "time": 1656050700823,
+            "output": null
+        }
+    }
+}

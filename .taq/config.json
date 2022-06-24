@@ -1,0 +1,130 @@
+{
+    "language": "en",
+    "plugins": [
+        {
+            "name": "@taqueria/plugin-ligo",
+            "type": "npm"
+        },
+        {
+            "name": "@taqueria/plugin-flextesa",
+            "type": "npm"
+        },
+        {
+            "name": "@taqueria/plugin-taquito",
+            "type": "npm"
+        },
+        {
+            "name": "@taqueria/plugin-tezos-client",
+            "type": "npm"
+        },
+        {
+            "name": "@taqueria/plugin-jest",
+            "type": "npm"
+        },
+        {
+            "name": "@taqueria/plugin-contract-types",
+            "type": "npm"
+        }
+    ],
+    "contractsDir": "contracts",
+    "artifactsDir": "artifacts",
+    "environment": {
+        "default": "development",
+        "development": {
+            "networks": [],
+            "sandboxes": [
+                "local"
+            ],
+            "storage": {}
+        },
+        "ithacanet": {
+            "networks": [
+                "ithaca_network"
+            ],
+            "sandboxes": [],
+            "storage": {}
+        },
+        "jakartanet": {
+            "networks": [
+                "jakarta_network"
+            ],
+            "sandboxes": [],
+            "storage": {}
+        }
+    },
+    "accounts": {
+        "bob": "3_000_000_000",
+        "alice": "3_000_000_000",
+        "john": "3_000_000_000",
+        "jane": "3_000_000_000",
+        "joe": "3_000_000_000"
+    },
+    "sandbox": {
+        "local": {
+            "label": "Local Tezos Sandbox",
+            "rpcUrl": "http://localhost:20000",
+            "protocol": "Psithaca2MLRFYargivpo7YvUr7wUDqyxrdhC5CQq78mRvimz6A",
+            }
+        }
+    },
+    "network": {
+        "ithaca_network": {
+            "label": "Ithaca Protocol Testnet",
+            "rpcUrl": "https://ithacanet.ecadinfra.com",
+            "protocol": "Psithaca2MLRFYargivpo7YvUr7wUDqyxrdhC5CQq78mRvimz6A",
+            "faucet": {
+                "pkh": "tz1QF3euSmsWnhXwSEEJho1DxjjaXsHvxUAo",
+                "mnemonic": [
+                    "census",
+                    "know",
+                    "around",
+                    "birth",
+                    "comfort",
+                    "owner",
+                    "seminar",
+                    "lonely",
+                    "region",
+                    "transfer",
+                    "visit",
+                    "warm",
+                    "play",
+                    "horse",
+                    "right"
+                ],
+                "email": "cgmrwddd.qeztxvnf@teztnets.xyz",
+                "password": "7jLsDQFK8E",
+                "amount": "85222703507",
+                "activation_code": "33a14842456d38fcd15c8bd9e9d65db8230f4c39"
+            }
+        },
+        "jakarta_network": {
+            "label": "Jakarta Protocol Testnet",
+            "rpcUrl": "https://rpc.jakartanet.teztnets.xyz",
+            "protocol": "PtJakart2xVj7pYXJBXrqHgd82rdkLey5ZeeGwDgPp9rhQUbSqY",
+            "faucet": {
+                "pkh": "tz1TNuv3PehfZpCqTGdGBAyabviQpgcJMFCC",
+                "mnemonic": [
+                    "furnace",
+                    "vocal",
+                    "cereal",
+                    "interest",
+                    "swallow",
+                    "wood",
+                    "phone",
+                    "scare",
+                    "issue",
+                    "improve",
+                    "deny",
+                    "attract",
+                    "believe",
+                    "zebra",
+                    "security"
+                ],
+                "email": "tnzzzrsf.aketnfwv@teztnets.xyz",
+                "password": "5mlmFyXME4",
+                "amount": "11986133105",
+                "activation_code": "cd2f9ea1c8820e175567bad46a7135f7168321f4"
+            }
+        }
+    },
+}
