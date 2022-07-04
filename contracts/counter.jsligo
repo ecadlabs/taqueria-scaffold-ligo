@@ -18,18 +18,3 @@ let main = ([action, store] : [parameter, storage]) : return_ => {
     Reset:     ()  => 0}))
   ]
 };
-/* Tests for main access point */
-let _test_initial_storage = () : bool => {
-  let initial_storage = 42 as int;
-  let [taddr, _, _] = Test.originate(main, initial_storage, 0 as tez);
-  return (Test.get_storage(taddr) == initial_storage);
-};
-let test_initial_storage = _test_initial_storage();
-let _test_increment = () : bool => {
-  let initial_storage = 42 as int;
-  let [taddr, _, _] = Test.originate(main, initial_storage, 0 as tez);
-  let contr = Test.to_contract(taddr);
-  let r = Test.transfer_to_contract_exn(contr, (Increment (1)), 1 as mutez);
-  return (Test.get_storage(taddr) == initial_storage + 1);
-}
-let test_increment = _test_increment();
