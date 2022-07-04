@@ -2,7 +2,6 @@
   "name": "taqueria-scaffold-ligo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,11 +9,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@taqueria/plugin-contract-types": "^0.0.0-pr-898-3bcb7fe3",
-    "@taqueria/plugin-flextesa": "^0.0.0-pr-898-3bcb7fe3",
-    "@taqueria/plugin-jest": "^0.0.0-pr-898-3bcb7fe3",
-    "@taqueria/plugin-ligo": "^0.0.0-pr-898-3bcb7fe3",
-    "@taqueria/plugin-taquito": "^0.0.0-pr-898-3bcb7fe3",
-    "@taqueria/plugin-tezos-client": "^0.0.0-pr-898-3bcb7fe3"
+    "@taqueria/plugin-contract-types": "latest",
+    "@taqueria/plugin-flextesa": "latest",
+    "@taqueria/plugin-jest": "latest",
+    "@taqueria/plugin-ligo": "latest",
+    "@taqueria/plugin-taquito": "latest",
+    "@taqueria/plugin-tezos-client": "latest"
   }
 }
